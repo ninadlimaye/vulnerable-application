@@ -1,0 +1,11 @@
+<h3 class="name"><%= @post.name %></h3>
+<div class="body">
+  <%= @post.body.html_safe %>
+</div>
+<div class="votes">
+  Votes: <div class="vote-count"><%= @post.votes %></div>
+  <div class="voting">
+    <a class="vote" href="#like-<%= @post.id %>">like</a> /
+    <a class="vote" href="#dislike-<%= @post.id %>">dislike</a>
+  </div>
+</div>
