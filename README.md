@@ -1,4 +1,4 @@
-# AppSec Quiz
+# AppSec Problem Set
 
 The Ruby on Rails application in this repository is a simple blogging framework. The admin user can publish blog posts and visitors to the site can vote on whether they like/dislike the posts.
 
@@ -31,4 +31,4 @@ Add the following function before the last 'end' of the class
 
 def ord
  +    Post.column_names.include?(params[:order]) ? params[:order] : "created_at"
-end
+ end
