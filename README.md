@@ -31,4 +31,4 @@ Add the following function before the last 'end' of the class
 
 def ord
  +    Post.column_names.include?(params[:order]) ? params[:order] : "created_at"
- +  end
+end
